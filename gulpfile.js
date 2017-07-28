@@ -13,7 +13,7 @@ gulp.task('script', function(){
 });
 
 gulp.task('style', function(){
-	gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css', 'assets/sasss/main.scss'])
+	gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css', 'assets/sass/main.scss'])
 		.pipe(sass().on('error', sass.logError))
 		.pipe(minifyCSS())
 		.pipe(concat('style.min.css'))
